@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Платформа генерации ответов</title>
+  <link rel="stylesheet" href="global.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>ПЛАТФОРМА ДЛЯ ГЕНЕРАЦИИ<br>ОТВЕТОВ НА ОБРАЩЕНИЯ</h1>
+    </header>
+
+    <main class="grid">
+      <section class="input-block">
+        <h2>ЗАГРУЗКА ОБРАЩЕНИЯ</h2>
+        <div class="context-actions">
+          <button id="historyButton" class="context-btn">📚 ИСТОРИЯ</button>
+          <button id="statsButton" class="context-btn">📊 СТАТИСТИКА</button>
+          <button id="newThreadButton" class="context-btn">✨ НОВЫЙ ДИАЛОГ</button>
+        </div>
+        <div class="block">
+          <textarea id="inputText" placeholder="ВВЕДИТЕ ТЕКСТ ОБРАЩЕНИЯ ИЛИ ДОБАВЬТЕ ФАЙЛ"></textarea>
+          <div class="file-upload">
+            <button class="file-btn" id="fileButton">ДОБАВИТЬ ФАЙЛ</button>
+            <span class="file-name" id="fileName">Файл не выбран</span>
+            <button class="delete-btn" id="deleteButton" style="display: none;">×</button>
+          </div>
+          <button class="generate-btn" id="generateButton">СГЕНЕРИРОВАТЬ</button>
+        </div>
+      </section>
+
+      <section class="output-block">
+        <h2>ОТВЕТ НА ОБРАЩЕНИЕ</h2>
+        <div class="block">
+          <textarea id="responseText" placeholder="ТЕКСТ ОТВЕТА" readonly></textarea>
+          <button class="copy-btn" id="copyButton">КОПИРОВАТЬ ТЕКСТ</button>
+          <div class="variant-container" id="variantContainer" style="display: none;">
+            <div class="variant-title">Варианты ответа:</div>
+            <div class="variant-buttons">
+              <button class="variant-btn" data-variant="official_strict">📋 ОФИЦИАЛЬНЫЙ</button>
+              <button class="variant-btn" data-variant="corporate_business">💼 ДЕЛОВОЙ</button>
+              <button class="variant-btn" data-variant="client_oriented">👥 КЛИЕНТООРИЕНТИРОВАННЫЙ</button>
+              <button class="variant-btn" data-variant="brief_informational">📄 КРАТКИЙ</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
