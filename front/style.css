@@ -132,11 +132,11 @@ button:hover {
     width: 100%;
     padding: 40px 20px;
   }
-  
+
   .grid {
     gap: 40px;
   }
-  
+
   .input-block,
   .output-block {
     width: 100%;
@@ -144,8 +144,6 @@ button:hover {
     height: 608px;
   }
 }
-
-/* Добавьте эти стили в конец файла */
 
 .delete-btn {
   width: 30px;
@@ -180,10 +178,68 @@ button:hover {
   position: relative;
 }
 
-/* Обновите существующие стили для лучшего выравнивания */
 .file-name {
   color: #666;
   font-style: italic;
   font-size: 14px;
   flex: 1;
+}
+
+.context-actions {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.context-btn {
+  border: 1px solid #999;
+  padding: 8px 14px;
+  font-size: 12px;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.context-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
+}
+
+.variant-container {
+  margin-top: 15px;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+.variant-title {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.variant-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.variant-btn {
+  border: 1px solid #999;
+  padding: 8px;
+  font-size: 11px;
+  background: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.variant-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-1px);
 }

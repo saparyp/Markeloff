@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const API_BASE = "http://localhost:8000";
+
+  let currentThreadId = null;
+  let currentResponseOptions = null;
   const fileButton = document.getElementById("fileButton");
   const generateButton = document.getElementById("generateButton");
   const copyButton = document.getElementById("copyButton");
